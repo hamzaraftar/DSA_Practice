@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-int arr[20], size;
+int arr[20];
+int size;
 void Create()
 {
     cout << "Enter size of array :" << endl;
@@ -13,7 +14,7 @@ void Create()
 }
 void Display()
 {
-    cout << "Enter elements of Array are :" << endl;
+    cout << "Enter elements of Array  :" << endl;
     for (int i = 0; i < size; i++)
     {
         cout << arr[i] << endl;
