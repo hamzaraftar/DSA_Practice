@@ -5,11 +5,11 @@ struct node
     int data;
     struct node *next;
 };
-struct node *head, *temp;
+struct node *temp, *head;
 
-int main()
+void Create()
 {
-    int choise;
+    int choise = 1;
     head = 0;
     while (choise)
     {
@@ -26,16 +26,39 @@ int main()
             temp->next = newNode;
             temp = newNode;
         }
-        cout << "Do you want to continue press(1,0)" << endl;
+        cout << "Do you want to continue press (1,0)" << endl;
         cin >> choise;
     }
+}
 
+void InsertAtBeg()
+{
+    node *newNode = new node;
+    cout << "Enter data at bengging :" << endl;
+    cin >> newNode->data;
+    newNode->next = 0;
     temp = head;
-    cout << "The node in Linklist are :" << endl;
+    newNode->next = head->next;
+    head = newNode;
+    delete (temp);
+}
+
+void Display()
+{
+    cout << "Nodes in linklist are : " << endl;
+    temp = head;
     while (temp != 0)
     {
-        cout << temp->data << endl;
+        cout << temp->data << " " << endl;
         temp = temp->next;
     }
+}
+int main()
+{
+    Create();
+    Display();
+    InsertAtBeg();
+    Display();
+
     return 0;
 }
