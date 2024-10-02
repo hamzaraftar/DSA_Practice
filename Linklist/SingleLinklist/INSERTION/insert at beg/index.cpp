@@ -37,10 +37,8 @@ void InsertAtBeg()
     cout << "Enter data at bengging :" << endl;
     cin >> newNode->data;
     newNode->next = 0;
-    temp = head;
-    newNode->next = head->next;
+    newNode->next = head;
     head = newNode;
-    delete (temp);
 }
 
 void Display()
