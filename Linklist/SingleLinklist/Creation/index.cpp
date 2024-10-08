@@ -6,46 +6,45 @@ struct node
     struct node *next;
 };
 struct node *head;
+struct node *temp;
 
-void CreateNode()
+void Create()
 {
-    int choise;
+    int choise = 1;
     head = 0;
     while (choise)
     {
-        struct node *temp;
         node *newNode = new node;
-        cout << "Enter data into Linklist : " << endl;
+        cout << "Enter data" << endl;
         cin >> newNode->data;
         newNode->next = 0;
         if (head == 0)
         {
-            head = temp = newNode;
+            temp = head = newNode;
         }
         else
         {
             temp->next = newNode;
             temp = newNode;
         }
-        cout << "Do you want to continue press (1,0)" << endl;
+        cout << "Do you want to continue press (1,2)" << endl;
         cin >> choise;
     }
 }
-void DisplayLinklist()
+
+void Display()
 {
-    cout << "The elements of linklist are :" << endl;
-    struct node *temp;
+    cout << "The node in linklist are :" << endl;
     temp = head;
     while (temp != 0)
     {
-        cout << temp->data << "  " << endl;
+        cout << temp->data << endl;
         temp = temp->next;
     }
 }
-
 int main()
 {
-    CreateNode();
-    DisplayLinklist();
+    Create();
+    Display();
     return 0;
 }
