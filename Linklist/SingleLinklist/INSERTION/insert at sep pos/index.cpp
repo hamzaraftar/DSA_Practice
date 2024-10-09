@@ -31,28 +31,6 @@ void Create()
     }
 }
 
-void InsertAtBeg()
-{
-    node *newNode = new node;
-    cout << "Enter data at bengging :" << endl;
-    cin >> newNode->data;
-    newNode->next = 0;
-    newNode->next = head;
-    head = newNode;
-}
-void InsertAtEnd()
-{
-    node *newNode = new node;
-    cout << "Enter data at end :" << endl;
-    cin >> newNode->data;
-    newNode->next = 0;
-    temp=head;
-    while (temp->next != 0)
-    {
-        temp = temp->next;
-    }
-    temp->next = newNode;
-}
 void Display()
 {
     cout << "Nodes in linklist are : " << endl;
@@ -63,11 +41,30 @@ void Display()
         temp = temp->next;
     }
 }
+
+void InsertAtSepPos()
+{
+    int pos, i = 1;
+    temp = head;
+    cout << "Enter position number : " << endl;
+    cin >> pos;
+    while (i < pos)
+    {
+        temp = temp->next;
+        i++;
+    }
+    node *newNode = new node;
+    cout << "Enter data you want to insert :" << endl;
+    cin >> newNode->data;
+    newNode->next = temp->next;
+    temp->next = newNode;
+}
+
 int main()
 {
     Create();
     Display();
-    InsertAtEnd();
+    InsertAtSepPos();
     Display();
     return 0;
 }
