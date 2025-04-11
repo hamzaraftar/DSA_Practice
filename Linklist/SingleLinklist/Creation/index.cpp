@@ -28,7 +28,7 @@ void Create()
             temp->next = newNode;
             temp = newNode;
         }
-        cout << "Do you want to continue press (1,2)" << endl;
+        cout << "Do you want to continue press (1,0)" << endl;
         cin >> choise;
     }
 }
