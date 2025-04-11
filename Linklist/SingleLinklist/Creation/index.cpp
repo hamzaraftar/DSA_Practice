@@ -5,6 +5,7 @@ struct node
     int data;
     struct node *next;
 };
+// pointers
 struct node *head;
 struct node *temp;
 
