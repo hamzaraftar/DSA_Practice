@@ -1,6 +1,3 @@
-#include <iostream>
-using namespace std;
-
 class Node
 {
 private:
@@ -30,7 +27,3 @@ public:
 
 
 
-int main()
-{
-    return 0;
-}
