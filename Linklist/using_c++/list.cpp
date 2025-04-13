@@ -55,8 +55,7 @@ public:
         {
             cout << temp->get() << " ";
             temp = temp->getNext();
-        }
-        // cout << "NULL" << endl;
+        }        
     }
 };
 
