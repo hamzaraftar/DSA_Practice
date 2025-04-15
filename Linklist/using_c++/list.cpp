@@ -53,9 +53,9 @@ public:
         Node *temp = headNode->getNext(); // skip dummy node
         while (temp != NULL)
         {
-            cout << temp->get() << " ";
+            cout << temp->get() << endl;
             temp = temp->getNext();
-        }        
+        }
     }
 };
 
