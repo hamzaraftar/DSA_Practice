@@ -43,6 +43,21 @@ public:
             cout << "Top element is " << top->get() << endl;
         }
     }
+
+    void pop()
+    {
+        currentNode = top;
+        if (top == 0)
+        {
+            cout << "Stack is empty " << endl;
+        }
+        else
+        {
+            cout << "Pop element is  " << top->get() << endl;
+            top = top->getNext();
+            delete (currentNode);
+        }
+    }
 };
 
 int main()
@@ -51,6 +66,7 @@ int main()
     stack.push(4);
     stack.push(5);
     stack.push(7);
-    // stack.Display();
-    stack.peak();
+    stack.Display();
+    stack.pop();
+    // stack.peak();
 }
