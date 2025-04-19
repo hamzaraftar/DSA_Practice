@@ -32,6 +32,17 @@ public:
             }
         }
     }
+    void peak()
+    {
+        if (top == 0)
+        {
+            cout << "Stack is empty " << endl;
+        }
+        else
+        {
+            cout << "Top element is " << top->get() << endl;
+        }
+    }
 };
 
 int main()
@@ -40,5 +51,6 @@ int main()
     stack.push(4);
     stack.push(5);
     stack.push(7);
-    stack.Display();
+    // stack.Display();
+    stack.peak();
 }
