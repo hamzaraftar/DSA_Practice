@@ -63,10 +63,12 @@ public:
 int main()
 {
     Stack stack;
-    stack.push(4);
-    stack.push(5);
-    stack.push(7);
+    stack.push(2);
+    stack.push(3);
+    stack.push(10);
     stack.Display();
-    stack.pop();
-    // stack.peak();
+    stack.peak();
+    // stack.pop();
+    // stack.Display();
+
 }
