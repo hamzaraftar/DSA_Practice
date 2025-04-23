@@ -54,11 +54,23 @@ void display()
     }
 }
 
-void peek(){
-    
+void peek()
+{
+    if (front == -1 && rear == -1)
+    {
+        cout << "Queue is empty" << endl;
+    }
+    else
+    {
+        cout << "The element in Front of Queque is : " << queue[front] << endl;
+    }
 }
 int main()
 {
-
-
+    enqueue(3);
+    enqueue(7);
+    enqueue(4);
+    enqueue(9);
+    enqueue(1);
+    display();
 }
