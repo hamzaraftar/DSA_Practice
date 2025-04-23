@@ -49,7 +49,7 @@ void display()
     {
         for (int i = front; i < rear + 1; i++)
         {
-            cout << "Dequeue element is : " << queue[i] << endl;
+            cout << "Queue element is : " << queue[i] << endl;
         }
     }
 }
@@ -73,4 +73,7 @@ int main()
     enqueue(9);
     enqueue(1);
     display();
+    dequeue();
+    display();
+
 }
