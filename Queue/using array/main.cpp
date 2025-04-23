@@ -38,4 +38,27 @@ void dequeue()
         front++;
     }
 }
-int main() {}
+
+void display()
+{
+    if (front == -1 && rear == -1)
+    {
+        cout << "Queue is empty" << endl;
+    }
+    else
+    {
+        for (int i = front; i < rear + 1; i++)
+        {
+            cout << "Dequeue element is : " << queue[i] << endl;
+        }
+    }
+}
+
+void peek(){
+    
+}
+int main()
+{
+
+
+}
