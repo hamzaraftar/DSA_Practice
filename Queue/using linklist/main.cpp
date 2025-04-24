@@ -42,6 +42,22 @@ public:
             }
         }
     }
+
+    void dequeue()
+    {
+        Node *temp;
+        temp = front;
+        if (front == 0 && rear == 0)
+        {
+            cout << "Queue is empty : " << endl;
+        }
+        else
+        {
+            cout << "Dequeue element is : " << front->get() << endl;
+            front = front->getNext();
+            delete (temp);
+        }
+    }
 };
 
 int main()
