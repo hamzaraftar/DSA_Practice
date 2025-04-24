@@ -24,6 +24,24 @@ public:
             rear = newNode;
         }
     }
+
+    void display()
+    {
+        Node *temp;
+        if (front == 0 && rear == 0)
+        {
+            cout << "Queue is empty : " << endl;
+        }
+        else
+        {
+            temp = front;
+            while (temp != 0)
+            {
+                cout << temp->get() << endl;
+                temp = temp->getNext();
+            }
+        }
+    }
 };
 
 int main()
