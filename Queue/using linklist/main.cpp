@@ -73,6 +73,13 @@ public:
 
 int main()
 {
+    Queue q;
+    q.enqueue(4);
+    q.enqueue(5);
+    q.enqueue(7);
+    q.enqueue(9);
+    q.display();
+    q.peek();
 
     return 0;
 }
