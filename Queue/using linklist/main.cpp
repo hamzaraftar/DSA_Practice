@@ -58,9 +58,21 @@ public:
             delete (temp);
         }
     }
+    void peek()
+    {
+        if (front == 0 && rear == 0)
+        {
+            cout << "Queue is empty : " << endl;
+        }
+        else
+        {
+            cout << "Firt element : " << front->get() << endl;
+        }
+    }
 };
 
 int main()
 {
+
     return 0;
 }
