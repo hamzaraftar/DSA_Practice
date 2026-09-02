@@ -44,3 +44,21 @@ for num in array:
         break
 print(number)
 ''' 
+
+# -------------------------------------------4. Two Sum
+'''
+nums = [2, 7, 11, 15]
+target = 9
+
+seen = {}
+
+for i in range(len(nums)):
+
+    answer = target - nums[i]
+
+    if answer in seen:
+        print([seen[answer], i])
+        break
+    else:
+        seen[nums[i]] = i
+'''
