@@ -12,6 +12,7 @@ for i  in range(len(array)):
 print(duplicate)        
 '''
 # ----------------------- 2 Count Frequency of Elements
+#-------------------------- logic is we make ""number = key"" 
 '''
 array = [1, 2, 2, 3, 1, 1]
 frequency = {}
@@ -21,8 +22,7 @@ for num in array:
         frequency[num] += 1
     else:
         frequency[num] = 1
-
-print(frequency)        
+print(frequency)
 '''
 
 #--------------- 3. Find the First Element That Appears Only Once
@@ -35,16 +35,14 @@ for num in array:
     if num in frequency:
         frequency[num] += 1
     else:
-        frequency[num] = 1
-print(frequency)        
+        frequency[num]  = 1
 
-for num in array:
-    if frequency[num] == 1:
+for num in frequency:
+    if frequency[num]  == 1:
         number = num
-        break
-print(number)
-''' 
 
+print(number)        
+'''
 # -------------------------------------------4. Two Sum
 '''
 nums = [2, 7, 11, 15]
@@ -53,7 +51,6 @@ target = 9
 seen = {}
 
 for i in range(len(nums)):
-
     answer = target - nums[i]
 
     if answer in seen:
