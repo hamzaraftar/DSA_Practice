@@ -74,3 +74,22 @@ for num in B:
 print(result)        
 '''
 
+# ----------------------------  6. Find the Element That Appears Once
+'''
+array = [2, 2, 1, 3, 3]
+frequency = {}
+number = 0
+for num in array:
+    if num in frequency:
+        frequency[num] += 1
+    else:
+        frequency[num]  = 1
+
+print(frequency)        
+
+for num in frequency:
+    if frequency[num] == 1:
+        number = num
+        break
+print(number)        
+'''
