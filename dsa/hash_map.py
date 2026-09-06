@@ -42,6 +42,7 @@ for num in frequency:
         number = num
 
 print(number)        
+
 '''
 # -------------------------------------------4. Two Sum
 '''
@@ -59,3 +60,17 @@ for i in range(len(nums)):
     else:
         seen[nums[i]] = i
 '''
+
+# -----------------------5. Find Common Elements Between Two Arrays
+'''
+A = [1, 2, 3, 4]
+B = [3, 4, 5, 6]
+result = []
+set_A = set(A)
+
+for num in B:
+    if num in set_A:
+        result.append(num)
+print(result)        
+'''
+
