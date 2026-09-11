@@ -37,3 +37,18 @@ for r in range(k , len(array)):
 
 print(best)    
 '''
+
+#---------------------------------- 4. Longest Subarray With Sum ≤ K
+'''
+array = [2, 1, 5, 2, 3, 2]
+k = 7
+
+l ,current ,best = 0 , 0 ,0 
+for r in range(len(array)):
+    current += array[r]
+    while  current > k:
+        current -= array[l]
+        l += 1
+    best = max(best, r- l+1)
+print(best)        
+'''
