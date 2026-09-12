@@ -52,3 +52,21 @@ for r in range(len(array)):
     best = max(best, r- l+1)
 print(best)        
 '''
+
+# ----------------------------------- 5. Longest Substring Without Repeating Characters
+'''
+array = "abcabcbb"
+left = 0
+result = 0
+seen = set()
+
+for right in range(len(array)):
+    while array[right] in seen:
+        seen.remove(array[left])    
+        left += 1
+
+    seen.add(array[right])
+    result = max(result , right - left + 1 )
+    
+print(result)        
+'''
