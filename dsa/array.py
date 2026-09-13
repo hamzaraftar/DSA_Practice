@@ -6,20 +6,25 @@
 #     print(array[i])
 
 #---------------------- for largest number in array
-# array  = [10, 4, 25, 7, 18]
-# largest = array[0]
-# for i in range(1 , len(array)):
-#     if array[i] > largest:
-#         largest = array[i]
-# print(largest)
+'''
+array  = [10, 4, 25, 7, 18]
+largest = array[0]
+
+for i in range(len(array)):
+    if array[i] > largest:
+        largest = array[i]
+print(largest)        
+'''
 
 #--------------------- for minimum number in array
-# array = [10, 4, 25, 7, 18 ]
-# smallest = array[0]       
-# for index in range(1, len(array)):
-#     if array[index] < smallest:
-#         smallest = array[index]
-# print(smallest)        
+'''
+array = [10, 4, 25, 7, 18 ]
+smallest = array[0]        
+for i in range(len(array)):
+    if array[i] < smallest:
+        smallest = array[i]
+print(smallest)        
+'''
 
 # ----------------------count  even number 
 # array = [1, 2, 4, 7, 8, 11, 14]
@@ -62,14 +67,18 @@
 # print(count)        
 
 # -------------------Reverse an array
-# arr = [1, 2, 3, 4, 5]
-# left = 0
-# right = len(arr) -1
-# while left < right:
-#     arr[left] , arr[right] = arr[right] , arr[left]
-#     left += 1
-#     right -= 1
-# print(arr)    
+'''
+array = [1, 2, 3, 4, 5]
+left = 0 
+right = len(array) - 1
+
+while left < right:
+    array[left] , array[right] = array[right] , array[left]
+
+    left += 1
+    right -= 1
+print(array)    
+'''    
 
 
 # ---------------------Count positive, negative and zero
@@ -122,3 +131,14 @@
 #     left += 1
 #     right -= 1
 # print(is_palindrom)   
+
+# ------------------------------ FizzBuzz
+for number in range(100):
+    if number % 3 == 0  and number % 5 == 0:
+        print('FizzBuzz')
+    elif number % 3 == 0:
+        print('Fizz')
+    elif  number % 5 == 0:
+        print('Buzz')       
+    else:
+        print(number)    
