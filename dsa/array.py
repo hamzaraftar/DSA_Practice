@@ -120,19 +120,23 @@ print(array)
 # print(name)       
 
 # --------------------------------------Check palindrome
-# name = "asghar"
-# is_palindrom = False
-# left = 0 
-# right = len(name) - 1
+'''
+name = "hamza"
+is_palindrom = True
+left = 0
+right = len(name) - 1
 
-# while left < right :
-#     if name[left] == name[right]:
-#         is_palindrom = True
-#     left += 1
-#     right -= 1
-# print(is_palindrom)   
+while left < right:
+    if name[left] != name[right]:
+        is_palindrom = False
+        break
+    left += 1
+    right -= 1
+print(is_palindrom)    
+'''  
 
 # ------------------------------ FizzBuzz
+'''
 for number in range(100):
     if number % 3 == 0  and number % 5 == 0:
         print('FizzBuzz')
@@ -142,3 +146,4 @@ for number in range(100):
         print('Buzz')       
     else:
         print(number)    
+'''        
