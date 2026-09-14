@@ -70,3 +70,18 @@ for right in range(len(array)):
     
 print(result)        
 '''
+
+# ----------------------------------------  6. Maximum Number of Consecutive 1s
+array = [1, 1, 0, 1, 1, 1]
+
+left = 0
+best = 0
+
+for right in range(len(array)):
+
+    if array[right] == 0:
+        left = right + 1
+
+    best = max(best, right - left + 1)
+
+print(best)   
