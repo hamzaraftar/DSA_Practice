@@ -27,28 +27,31 @@ print(is_palindrom)
 '''
 
 # ------------------------------------ 3  Move All Zeros to the End
+# hint move non zero to left 
 '''
 array = [0, 1, 0, 3, 12]
-i = 0
-for j in range(len(array)):
-    if array[j] != 0:
-        array[i] , array[j]= array[j] ,array[i]
-        i += 1    
-print(array)
-'''  
+left = 0
+
+for right in range(len(array)):
+    if array[right] != 0:
+        array[left] , array[right] = array[right] , array[left]
+        left += 1
+print(array)        
+'''
 
 # ------------------------------------ 4 Two Sum in a Sorted Array
-''' 
+'''
 array = [ 2, 4, 6,7, 9]
 target = 10
+
 left = 0
 right = len(array) - 1
+
 while left < right:
     total = array[left] + array[right]
     if total == target:
         print(array[left] , array[right])
         break
-       
     elif total < target:
         left += 1
     else:
