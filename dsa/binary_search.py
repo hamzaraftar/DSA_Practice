@@ -45,6 +45,7 @@ print(answer)
 
 
 # --------------------------------------- 4 Find the Floor of a Number
+# hint check for small not for actual target 
 '''
 array = [1, 3, 5, 7, 9]
 target = 6
@@ -61,4 +62,25 @@ while left <= right:
     else:
         right = mid - 1    
 print(answer)        
+'''
+
+#-----------------------------------5 Find the Ceiling of a Number
+# hit check for great not for actual target 
+'''
+array = [1, 3, 5, 7, 9]
+target = 6
+# output expected is 7
+
+left = 0
+right = len(array) - 1
+answer = 0
+
+while left <= right:
+    mid = (left + right) // 2
+    if array[mid] >= target:
+        answer = array[mid]
+        right = mid -1
+    else:
+        left = mid + 1    
+print(answer)
 '''
