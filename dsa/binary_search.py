@@ -1,5 +1,4 @@
 # ---------------------------1  Binary Search — Find a Target
-'''
 array = [1, 3, 5, 7, 9, 11, 13]
 target = 9
 
@@ -7,15 +6,15 @@ left = 0
 right = len(array) - 1
 
 while left <= right:
-    mid = (left + right) // 2
+    mid = (left + right ) //2 
+
     if array[mid] == target:
-        print(mid)
+        print(array[mid])
         break
-    elif array[mid]  < target:
-        left = mid + 1
+    elif array[mid] < target:
+        left = mid +1
     else:
-        right = mid - 1       
-'''
+        right = mid - 1    
 
 # ----------------------------  2 Search Insert Position
 '''
@@ -84,3 +83,20 @@ while left <= right:
         left = mid + 1    
 print(answer)
 '''
+
+# ---------------------------  6 Find the First Bad Version (Simplified)
+# bad_version = 6
+# left = 0
+# right = 10
+# def is_bad(version):
+#     if version == 6 and version > 6:
+#         return True
+#     else:
+#         return False 
+
+
+
+# while left <= right:
+#     mid = (left + right) // 2
+#     if is_bad(mid):
+
