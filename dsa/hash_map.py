@@ -1,30 +1,30 @@
 # ------------------------1. Check for Duplicate
+# Hashset is use to remember value
 '''
-array = [1, 2, 3, 4]
-seem = set()
-
+array = [1, 2, 2 , 3, 4]
+seen = set()
 duplicate = False
-for i  in range(len(array)):
-    if array[i] in seem:
+for num in array:
+    if num in seen:
         duplicate = True
-    else:
-        seem.add(array[i])
-print(duplicate)        
+        break
+    seen.add(num)
+print(duplicate)
 '''
+
 # ----------------------- 2 Count Frequency of Elements
 #-------------------------- logic is we make ""number = key"" 
 '''
 array = [1, 2, 2, 3, 1, 1]
 frequency = {}
 
-for num in array:
-    if num in frequency:
-        frequency[num] += 1
+for i in range(len(array)):
+    if array[i] in frequency:
+        frequency[array[i]] += 1
     else:
-        frequency[num] = 1
-print(frequency)
+        frequency[array[i]] = 1
+print(frequency)    
 '''
-
 #--------------- 3. Find the First Element That Appears Only Once
 '''
 array = [4, 5, 1, 2, 1, 4, 5]
@@ -42,8 +42,8 @@ for num in frequency:
         number = num
 
 print(number)        
-
 '''
+
 # -------------------------------------------4. Two Sum
 '''
 nums = [2, 7, 11, 15]
