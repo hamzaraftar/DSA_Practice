@@ -12,3 +12,15 @@ while left <= right:
     right -= 1    
 print(is_palindorm)    
 '''
+
+# ---------------------------------- reverce string
+name = 'hamza'
+left = 0 
+right = len(name )  - 1
+
+while left <= right:
+    name[left] , name[right] = name[right] , name[left]
+    left += 1
+    right -= 1
+
+print(name)    
