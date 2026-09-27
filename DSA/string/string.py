@@ -14,13 +14,13 @@ print(is_palindorm)
 '''
 
 # ---------------------------------- reverce string
-name = 'hamza'
-left = 0 
-right = len(name )  - 1
+# -------------------------hint  in this we use extra space
+'''
+name = 'hello'
+result = ""
 
-while left <= right:
-    name[left] , name[right] = name[right] , name[left]
-    left += 1
-    right -= 1
+for i in range(4 ,-1,-1):
+    result += name[i]
 
-print(name)    
+print(result)  
+'''  
