@@ -13,7 +13,7 @@ while left <= right:
 print(is_palindorm)    
 '''
 
-# ---------------------------------- reverce string
+# ----------------------------------1 reverce string
 # -------------------------hint  in this we use extra space
 '''
 name = 'hello'
@@ -24,3 +24,18 @@ for i in range(4 ,-1,-1):
 
 print(result)  
 '''  
+
+# ------------------------------- 3. Count Characters
+'''
+s = "hello"
+
+frequency = {}
+
+for r in s:
+    if r in frequency:
+        # frequency[r] += 1
+        frequency[r] = frequency[r] + 1    
+    else:
+        frequency[r] = 1
+print(frequency) 
+'''       
