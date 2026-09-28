@@ -1,18 +1,3 @@
-# --------------------------------  practing stings 
-'''
-name = 'mam'
-left = 0 
-right = len(name) - 1
-
-is_palindorm = True
-while left <= right:
-    if name[left] != name[right]:
-        is_palindorm = False
-    left += 1
-    right -= 1    
-print(is_palindorm)    
-'''
-
 # ----------------------------------1 reverce string
 # -------------------------hint  in this we use extra space
 '''
@@ -24,6 +9,20 @@ for i in range(4 ,-1,-1):
 
 print(result)  
 '''  
+
+# --------------------- 2 Count Vowels
+'''
+s = "programming"
+
+count = 0
+vowels = "aeiou"
+for char in s:
+    if char in vowels:
+        count += 1
+
+print(count)        
+'''
+
 
 # ------------------------------- 3. Count Characters
 '''
