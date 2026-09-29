@@ -23,7 +23,6 @@ for char in s:
 print(count)        
 '''
 
-
 # ------------------------------- 3. Count Characters
 '''
 s = "hello"
@@ -55,3 +54,13 @@ while left < right:
     right -= 1
 print(is_palindrome)   
 ''' 
+
+# ----------------------------------------- 5. Remove Spaces
+'''
+s = "hello world python"
+result = ""
+for char in s:
+    if char != " ":
+        result += char
+print(result)        
+'''
