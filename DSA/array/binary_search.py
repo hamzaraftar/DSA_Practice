@@ -1,4 +1,5 @@
 # ---------------------------1  Binary Search — Find a Target
+'''
 array = [1, 3, 5, 7, 9, 11, 13]
 target = 9
 
@@ -9,12 +10,14 @@ while left <= right:
     mid = (left + right ) //2 
 
     if array[mid] == target:
-        print(array[mid])
+        print(mid)
         break
-    elif array[mid] < target:
-        left = mid +1
+    elif array[mid] > target:
+        right = mid - 1  
     else:
-        right = mid - 1    
+        left = mid +1
+'''
+          
 
 # ----------------------------  2 Search Insert Position
 '''

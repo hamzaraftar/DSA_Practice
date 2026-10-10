@@ -1,18 +1,23 @@
 # --------------------Traverse an array 
-# array = [10, 4, 25, 7, 18]
-# for i in array:
-#     print(i)
-# for i in range(len(array)):
-#     print(array[i])
+'''
+array = [10, 4, 25, 7, 18]
+for i in range(len(array)):
+    # give index
+    print(array[i])
+
+for num in array:
+    # give elements of array
+    print(num)
+'''
 
 #---------------------- for largest number in array
 '''
-array  = [10, 4, 25, 7, 18]
+array  = [10, 4, 25, 7, 18]       
 largest = array[0]
 
 for i in range(len(array)):
     if array[i] > largest:
-        largest = array[i]
+        largest = array [i]
 print(largest)        
 '''
 
@@ -27,26 +32,30 @@ print(smallest)
 '''
 
 # ----------------------count  even number 
-# array = [1, 2, 4, 7, 8, 11, 14]
-# count = 0
-# for i in range(len(array)):
-#     if array[i] % 2 == 0 :
-#         count += 1
-# print(count)        
+'''
+array = [1, 2, 4, 7, 8, 11, 14]
+count = 0
+
+for i in range(len(array)):
+    if array[i] % 2 == 0:
+        count = count + 1
+print(count)        
+'''
 
 # --------------------search number 
-# array = [10, 20, 30, 40, 50]
-# target = 110
-# found = False
+'''
+array = [10, 20, 30, 40, 50]
+target = 110
+found = False
 
-# for i in range(len(array)):
-#     if array[i] == target:
-#         found = True
-#         break
-#     else:
-#         found = False
-# print(found)
-
+for i in range(len(array)):
+    if array[i] == target:
+        found = True
+        break 
+    else:
+        found = False
+print(found)            
+'''
 # --------------------find the index
 # arr = [10, 20, 30, 40, 50]
 # target = 40
@@ -69,34 +78,33 @@ print(smallest)
 # -------------------Reverse an array
 '''
 array = [1, 2, 3, 4, 5]
-left = 0 
+left = 0
 right = len(array) - 1
-
 while left < right:
     array[left] , array[right] = array[right] , array[left]
-
     left += 1
     right -= 1
-print(array)    
-'''    
+print(array) 
 
+'''
 
 # ---------------------Count positive, negative and zero
-# array = [5, -2, 0, 8, -7, 0, 3]
-# positive = 0
-# negatie = 0
-# zero = 0
-# for i in range(len(array)):
-#     if array[i] < 0:
-#         negatie += 1
-#     elif array[i]   > 0:
-#         positive += 1
-#     else:
-#         zero += 1
-# print(f"positive {positive}")   
-# print(f"negative {negatie}")            
-# print(f"zero {zero}")            
-
+'''
+array = [5, -2, 0, 8, -7, 0, 3]
+positive = 0
+negatie = 0
+zero = 0
+for i in range(len(array)):
+    if array[i] < 0:
+        negatie += 1
+    elif array[i]   > 0:
+        positive += 1
+    else:
+        zero += 1
+print(f"positive {positive}")   
+print(f"negative {negatie}")            
+print(f"zero {zero}")            
+'''
 # ---------------------------------12. Check if array is sorted
 # array = [1, 2, 3, 4, 6]
 # is_sorted  = False

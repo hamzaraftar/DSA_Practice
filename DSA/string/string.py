@@ -14,29 +14,20 @@ print(result)
 '''
 s = "programming"
 
-count = 0
+result = 0
 vowels = "aeiou"
 for char in s:
     if char in vowels:
-        count += 1
+        result += 1
 
-print(count)        
+print(result)        
 '''
 
 # ------------------------------- 3. Count Characters
-'''
+
 s = "hello"
 
-frequency = {}
-
-for r in s:
-    if r in frequency:
-        # frequency[r] += 1
-        frequency[r] = frequency[r] + 1    
-    else:
-        frequency[r] = 1
-print(frequency) 
-'''       
+      
 
 #--------------------------------- 4. Check Palindrome
 '''
