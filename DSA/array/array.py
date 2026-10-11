@@ -95,16 +95,18 @@ positive = 0
 negatie = 0
 zero = 0
 for i in range(len(array)):
-    if array[i] < 0:
-        negatie += 1
-    elif array[i]   > 0:
+    if array[i] > 0:
         positive += 1
+    elif array[i]  < 0:
+        negatie +=  1
     else:
         zero += 1
-print(f"positive {positive}")   
-print(f"negative {negatie}")            
-print(f"zero {zero}")            
+
+print(f'positive {positive}')        
+print(f'negative {negatie}')        
+print(f'zero {zero}')        
 '''
+
 # ---------------------------------12. Check if array is sorted
 # array = [1, 2, 3, 4, 6]
 # is_sorted  = False
